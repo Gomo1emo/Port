@@ -7,7 +7,7 @@
 </header>
 <style>
     /*Wildcard style to apply to all*/
-    *{
+    * {
         box-sizing: border-box;
     }
     body{
@@ -37,7 +37,6 @@
         display: -webkit-box;
         -webkit-box-orient: vertical;
         -webkit-line-clamp: 4;
-        overflow: hidden;
     }
 
     /* Row decoration*/
@@ -65,62 +64,69 @@ h2 {
     font-family: 'Silkscreen Expanded', sans-serif;
 }
 .nav {
-    display: grid;
-    background-color: aquamarine;
+    display: flex;
+    background-color: rgb(80, 244, 189);
     height: 200px;
     margin: none;
+    top: 0;
+    border: 1px solid black;
+    overflow: hidden;
     
 }
 .side {
     display: grid;
     background-color: red;
     height: 1000px;
-    width: 380px;
-    margin: none;
+    width: 20%;
+    left: 0;
+    overflow: hidden;
     float: left;
+    border: 1px solid black;
+    margin: none;
 }
 .dash {
     display: grid;
-    background-color: yellow;
+    background-color: rgb(236, 236, 151);
     height: 1000px;
-    width: 839px;
+    width: 80%;
     margin: none;
-    position: relative;
-    left: 380px;
-    bottom: 1000px;
+    right: 0;
+    border: 1px solid black;
 }
 p {
     font-size: 70px;
-    position: absolute;
-    text-align: right;
-    width: 60%;
-    border: 2px solid black;
-    display: inline-block;
-
+    word-wrap: break-word;
+    overflow: hidden;
 }
-img {
+.header {
+    text-align: center;
+}
+
+.logo {
     
-    height: 70px;
-    position: absolute;
-    width: 30%;
-    border: 2px solid orange ;
-    display: inline-block;
-    margin: ;
+    height: 80px;
+    display: block;
+    
+}
+.dog {
+    margin: 20px auto 20px;
+    width: 70%;
     
 }
 
 </style>
 <body>
     <div class="nav">
-        <p>My Portfolio</p>
-        <img src="GitHub_Invertocat_Logo.svg" alt="">
+        <p class="header">My Portfolio</p>
+        <img class="logo" src="GitHub_Invertocat_Logo.svg" alt="git logo">
         
     </div>
     <div class="side">
-        <p>Find some information here!</p>
+        <p >Find some information here!</p>
     </div>
     <div class="dash">
-        <img src="download.jpeg" alt="">
+        <img class="dog" src="download.jpeg" alt=""> <br>
+        <h1>Hi, this content is about this dog</h1>
     </div>
 </body>
 </html>
