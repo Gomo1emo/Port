@@ -3,130 +3,147 @@
 <header>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My portfolio</title>
+    <title>Doggy-breed.ru//breed/cane-corso.</title>
 </header>
 <style>
     /*Wildcard style to apply to all*/
     * {
         box-sizing: border-box;
     }
-    body{
-        padding: 15px;
-    }
 
-    /* Style the body with conainers */
-
-    .container {
-        max-width: 1200px;
-        margin: auto;
-    }
-
-    h1 {
-        color: greenyellow;
-    }
     /* Anchor tag decorator*/
     a {
         text-decoration: none;
-        color: rgb(5, 5, 99);
+        color: rgb(215, 215, 50);
     }
-    a :hover {
-        color: lightblue;
+    body {
+        margin: 0;
     }
-
-    p {
-        display: -webkit-box;
-        -webkit-box-orient: vertical;
-        -webkit-line-clamp: 4;
+    a:hover {
+        color: rgb(59, 239, 19);
     }
 
-    /* Row decoration*/
-    /*.row {
-        margin: 6px --18px;
-    }*/
-    column {
-        float: left;
-    }
-
-    /*.row > .column {
-    }
-*/
-    h1 {
-    color: wheat;
-}
-
-h2 {
-    color: green;
-}
-.h2 {
-    color: purple;
-    font-size: xx-large;
-    font-family: 'Silkcsreen', sans-serif;
-    font-family: 'Silkscreen Expanded', sans-serif;
-}
 .nav {
-    display: flex;
-    background-color: rgb(80, 244, 189);
-    height: 200px;
+    display: grid;
+    background-color: rgb(75, 125, 108);
+    height: 21%;
     margin: none;
+    width: 100%;
     top: 0;
-    border: 1px solid black;
     overflow: hidden;
+    position: fixed;
     
 }
 .side {
     display: grid;
-    background-color: red;
-    height: 1000px;
+    background-color: rgb(240, 81, 81);
+    height: 80%;
     width: 20%;
-    left: 0;
-    overflow: hidden;
-    float: left;
-    border: 1px solid black;
-    margin: none;
+    margin-right: 20%;
+    position: fixed;
+    top: 150px;
 }
 .dash {
-    display: grid;
     background-color: rgb(236, 236, 151);
-    height: 1000px;
+    height: 80%;
     width: 80%;
-    margin: none;
-    right: 0;
-    border: 1px solid black;
+    margin-top: 150px;
+    position: static;
+    display: grid;
+    margin-left: 20%;
 }
 p {
-    font-size: 70px;
+    font-size:25px;
     word-wrap: break-word;
     overflow: hidden;
+    margin: auto;
+    padding: 10px;
+}
+.breed-name {
+    font-size: 50px;
+    padding: 0;
 }
 .header {
-    text-align: center;
+    
+    font-size: 50px;
+    margin: auto;
+}
+.header:hover {
+    font-size: 60px;
 }
 
 .logo {
     
-    height: 80px;
+    height: 140px;
     display: block;
+    position: fixed;
+    right: 0;;
+
     
 }
 .dog {
-    margin: 20px auto 20px;
+    margin-bottom: 0;
+    margin-top: 0;
+    margin-left:15%;
+    margin-right: 15%;
     width: 70%;
     
+}
+li {
+    margin: 0;
+    padding: 0;
+    font-size: large;
+}
+.content {
+    text-align: center;
+    margin-top: 0;
+}
+.info {
+    font-size: medium;
+}
+#info {
+    
+    font-size: 1.3rem;
+    padding: 10px;
+}
+img {
+    padding: 10px;
 }
 
 </style>
 <body>
     <div class="nav">
-        <p class="header">My Portfolio</p>
-        <img class="logo" src="GitHub_Invertocat_Logo.svg" alt="git logo">
+        <p class="header">Doggy-breed.ru</p>
+        <img class="logo" src="images.png" alt="git logo">
         
     </div>
     <div class="side">
-        <p >Find some information here!</p>
+        <p class="side-bar">
+            About the breed:
+            <li>
+                <ul><a>Mannerisms</a></ul>
+                <ul><a>Diet</a></ul>
+                <ul><a>Health Issues</a></ul>
+                <ul><a>Pro's</a></ul>
+                <ul><a>Con's</a></ul>
+            </li>
+        </p>
     </div>
     <div class="dash">
+        <p class="breed-name">Cane Corso</p>
         <img class="dog" src="download.jpeg" alt=""> <br>
-        <h1>Hi, this content is about this dog</h1>
+        <h1 class="content" >Info:</h1>
+        <p id="info">Smart, trainable, and of noble bearing, the assertive and confident Cane Corso is a peerless protector.
+            The Corso's lineage goes back to ancient Roman times, and the breed's name roughly translates from the Latin as 'bodyguard dog.'
+            At nearly 28 inches at the shoulder and often weighing more than 100 pounds, with a large head, alert expression, and muscles rippling beneath their short, stiff coat, Corsi are at a glance intimidating creatures.
+            Their imposing appearance is their first line of defense against intruders.
+            As one writer put it,
+            An understated air of cool competence, the kind of demeanor you'd expect from a professional bodyguard, is the breed's trademark.
+            Corsi are intelligent, loyal, eager to please, versatile, and intensely loyal to their humans, but are also assertive and willful, and can end up owning an unwitting owner.
+            As with any other big guardian dog, responsible breeding and early socialization with people and other dogs is vital. <br>
+            Pronunciation - Connie Corso
+            </p> <br>
+            <img src="Cane.jpeg" alt="">
     </div>
 </body>
 </html>
